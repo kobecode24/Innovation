@@ -46,11 +46,6 @@ h1 {
 
 }
 
-.image_position {
-    width: 70%;
-    display: block;
-    margin: auto;
-}
 
 header {
     padding: 0 70px;
@@ -67,11 +62,6 @@ h2 {
     font-weight: bold;
     text-align: center;
     padding-top: 100px;
-}
-
-h3 {
-    font-family: "DM Sans", sans-serif;
-    color: #0F2137;
 }
 
 .background-container {
