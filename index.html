@@ -13,23 +13,35 @@
 <body>
 
 <header>
-    <a href="./index.html">
-        <img class="logo" src="./images/logo.png" alt="innovations_logo">
-    </a>
-    <a href="./index.html">
-        <img class="log_text" src="./images/logo_text_png.png" alt="innovations_logo_text">
-    </a>
+
     <nav>
+        <a href="./index.html" class="logo_text"> <img class="logo" src="./images/logo.png" alt="innovations_logo"/>Innovations</a>
         <ul class="menu">
-            <li style="margin-left: 350px"><a class="custom-link" href="./index.html"> Home</a></li>
+            <li><a class="custom-link" href="./index.html"> Home</a></li>
             <li><a class="custom-link" href="./advertise.html"> Advertise&#9660;</a></li>
             <li><a class="custom-link" href="./contact_us.html"> Support&#9660;</a></li>
             <li><a class="custom-link" href="./about_us.html"> About</a></li>
-            <li style="margin-left: 200px"><a class="custom-link" href="#"> Login</a></li>
-            <li ID="get_started"><a class="custom-link" href="#"> Get Started</a><img src="./images/lines_png.png"
-                                                                                      alt="two line under get started">
-            </li>
         </ul>
+        <div class="right-nav">
+                <a href="#">login</a>
+                <a id="get_started" href="#">Get started</a>
+            <div class="underline">
+                <img src="images/lines_png.png" alt="underline">
+            </div>
+        </div>
+        <div class="mobile-nav" id="burger">
+            <i class="fa-solid fa-bars" style="color: #02073E;" id="burgerIcon"></i>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a class="custom-link" href="./index.html"> Home</a></li>
+                <li><a class="custom-link" href="./advertise.html"> Advertise&#9660;</a></li>
+                <li><a class="custom-link" href="./contact_us.html"> Support&#9660;</a></li>
+                <li><a class="custom-link" href="./about_us.html"> About</a></li>
+                <li><a href="#">login</a></li>
+                <li><a href="#">Get started</a></li>
+            </ul>
+        </div>
     </nav>
 </header>
 <div>
@@ -37,43 +49,43 @@
     <p class="h1_description">A service agency with customer satisfaction</p>
 </div>
 <div class="background">
-    <button class="get_started_button"><a style="text-decoration: none;color: inherit"
-                                          href="#get_started_scroll">Get Started</a></button>
+    <button class="get_started_button"><a href="#get_started_scroll">Get Started</a></button>
     <img class="image_position" src="images/landing_page.png" alt="figma image">
     <h2 id="get_started_scroll">Grow your startup with our Service</h2>
     <p class="background_description">Build an incredible workplace and grow your business with
-        Gusto’s<br />all-in-one
+        Gusto’s<br/>all-in-one
         platform with amazing contents.</p>
-    <div class="services_dev">
-        <div class="services">
-            <div>
-                <img src="./images/red_icon.png" alt="service 1">
+
+        <div class="services_dev">
+            <div class="services">
+                    <div>
+                        <img src="./images/red_icon.png" alt="service 1">
+                    </div>
+                    <div>
+                        <h3>Marketing & advertising</h3>
+                        <p>Get your info tests delivered at<br />home collect a sample from the<br />your pogress tests.</p>
+                    </div>
+                </div>
+                <div class="services">
+                    <div>
+                        <img src="./images/blue_icon.png" alt="service 2">
+                    </div>
+                    <div>
+                        <h3>Ultimate development</h3>
+                        <p>Get your info tests delivered at<br />home collect a sample from the<br />your pogress tests.</p>
+                    </div>
+                </div>
+                <div class="services">
+                    <div>
+                        <img src="./images/green_icon.png" alt="service 3">
+                    </div>
+                    <div>
+                        <h3>Business Enterprise</h3>
+                        <p>Get your info tests delivered at<br />home collect a sample from the<br />your pogress tests.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h3>Marketing & advertising</h3>
-                <p>Get your info tests delivered at<br />home collect a sample from the<br />your pogress tests.</p>
-            </div>
-        </div>
-        <div class="services">
-            <div>
-                <img src="./images/blue_icon.png" alt="service 2">
-            </div>
-            <div>
-                <h3>Ultimate development</h3>
-                <p>Get your info tests delivered at<br />home collect a sample from the<br />your pogress tests.</p>
-            </div>
-        </div>
-        <div class="services">
-            <div>
-                <img src="./images/green_icon.png" alt="service 3">
-            </div>
-            <div>
-                <h3>Business Enterprise</h3>
-                <p>Get your info tests delivered at<br />home collect a sample from the<br />your pogress tests.</p>
-            </div>
-        </div>
     </div>
-</div>
 <div class="questions">
     <p>Why you choose our service?</p>
     <p>What’s our business promise?</p>
@@ -83,12 +95,11 @@
 <div class="front-line"></div>
 <div class="middle">
     <div>
-        <h2 style="text-align: start">We will turn your idea in<br />the successful business<br />model framework
-        </h2>
+        <h2 class="h2-middle">We will turn your idea in<br />the successful business<br />model framework</h2>
         <p class="middle_p">Get your tests delivered at let home collect sample from<br />the victory of the
-            managments
+            managements
             that supplies best design<br />system guidelines ever.</p>
-        <div class="green_mark_text">
+            <div class="green_mark_text">
             <ul>
                 <li>Medical and vision</li>
                 <li>Life insurance</li>
@@ -102,11 +113,11 @@
         </div>
     </div>
     <div>
-        <img style="width: 80%;margin-top: 180px" src="./images/illustration.png" alt="middle image">
+        <img class="illustration" src="./images/illustration.png" alt="middle image">
     </div>
 </div>
 <a class="explore_more" href="./advertise.html">Explore more ></a>
-<section class="gray-background">
+<!--<section class="gray-background">
     <h2>Other services you must appreciate</h2>
     <p class="background_description">Focus only on the meaning, we take care of the design. As soon as
         the<br />meeting end you can export in one click into your preferred.</p>
@@ -160,24 +171,31 @@
             </div>
         </div>
     </div>
-</section>
+</section>-->
 <section class="subscribe-background">
     <div class="content-container">
         <div class="white-background">
             <div>
-                <h2 style="padding-top: unset ;text-align: unset;font-size: 1.5rem">Like our service? Subscribe us
+                <h2 class="subscribe-h2">Like our service? Subscribe us
                 </h2>
                 <p>We have more than a thousand of creative entrepreneurs<br />and start joining our business</p>
             </div>
             <div class="input-container">
-                <!--<label for="email">Email Address </label>-->
-                <input type="email" id="email" placeholder="Enter Email address" class="subscribe-input">
+                <div class="sub-bar">
+                    <div>
+                        <!--<label for="email">Email Address </label>-->
+                        <input class="subscribe-input" type="email" id="email" placeholder="Enter Email address">
+                    </div>
+                    <div>
+                        <button class="subscribe-btn">Subscribe</button>
+                    </div>
+                </div>
                 <div>
                     <input type="checkbox" id="promotionalMessage">
                     <label for="promotionalMessage">Don't provide any promotional message.</label>
                 </div>
             </div>
-            <button class="subscribe-btn">Subscribe</button>
+            <!--<button class="subscribe-btn">Subscribe</button>-->
         </div>
     </div>
 </section>
@@ -232,7 +250,7 @@
         </div>
     </div>
 </footer>
-
+<script src="./app.js"></script>
 </body>
 
 </html>
