@@ -95,19 +95,24 @@ nav {
     z-index: 1001;
     position: relative;
 }
-
-@media (min-width: 771px) {
+@media (max-width: 1000px) {
+    .contact-form{
+        width: 50% !important;
+    }
+}
+@media (min-width: 701px) {
     .mobile-nav{
         display: none;
     }
 }
-@media (max-width: 770px) {
+@media (max-width: 700px) {
     .menu{
         display: none;
     }
     .right-nav{
         display: none;
     }
+
     nav {
         display: flex;
         justify-content: space-between;
@@ -118,76 +123,15 @@ nav {
         justify-content: space-around;
         gap: 2rem;
     }
+    .get_started_button {
+        height: 39px;
+    }
     h1{
         font-size: 1.7rem;
     }
-   .background-container{
-       background-image: none !important;
-       background-color: #F8F0EA;
-       width: 100%;
-       height: 100vh !important;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       position: relative;
-   }
-    .plus-container {
-        width: 100% !important;
+    .middle h2{
+        font-size: 1.2rem;
     }
-
-    .ring {
-        position: absolute;
-        top:20% !important;
-        left: 10%;
-        width: 80%;
-        height: 60% !important;
-        background: #0e8080;
-        border-radius: 50%;
-    }
-
-    .ring::before {
-        content: '';
-        width: 20%;
-        height: 20%;
-        background: #f8f0ea;
-        border-radius: 50%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .right{
-        right: 7% !important;
-        bottom: 7vh !important;
-    }
-    .top{
-        bottom: 20vh !important;
-        left: 35% !important;
-    }
-    .bottom {
-        top: -1vh !important;
-        left: 35% !important;
-    }
-    .left{
-        left: 11% !important;
-        bottom: 7vh !important;
-    }
-    .icon-container{
-        font-size: 1.7vw !important;
-    }
-
-    .long-paragraph{
-        width: 100% !important;
-        padding-top: 5%;
-
-        background-color: #FFDFC6 !important;
-        top: 70% !important;
-        left: 0 !important;
-        font-size: 3vw  !important;
-        line-height: 4vh !important;
-    }
-
     .subscribe-h2{
         font-size: 1.2rem;
     }
@@ -195,55 +139,20 @@ nav {
         background-image: url("./images/submobile.png") !important;
         background-size: cover;
     }
-    .gray-background{
-        background-color: #FFCBA1 !important;
-        font-size: 2vw;
-    }
-    .service a{
-        font-size: 2vw !important;
-    }
-    .service img{
-        width: 20%;
-        height: 30%;
-    }
-
-}
-@media (min-width: 0px) and (max-width: 425px){
-    .gray-background{
-        margin-top: 200px !important;
+    .contact-form{
+        width: 70% !important;
     }
 }
-@media (min-width: 0px) and (max-width: 770px){
-    .background-container{
-        height: 120vh !important;
-    }
-    .long-paragraph{
-        font-size: 13px  !important;
-        top: 90% !important;
-    }
-    .ring{
-        width: 80%;
-        top: 2%;
-        left: 10%;
-        height: 85%;
-    }
-    .top{
-        bottom: 20vh !important;
-        left: 35% !important;
-    }
-    .bottom{
-        top: 10vh !important;
-        left: 35% !important;
-    }
-    .right{
-        bottom: 0 !important;
-        right: 11% !important;
-    }
-    .left{
-        bottom: -1vh !important;
+@media (max-width: 608px) {
+    .contact-form{
+        width: 80% !important;
     }
 }
-
+@media (max-width: 465px) {
+    .contact-form{
+        width: 90% !important;
+    }
+}
 
 .mobile-menu {
     display: block;
@@ -253,10 +162,10 @@ nav {
     width: 250px;
     height: 100vh;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: right 0.3s ease-in-out;
     z-index: 1000;
 }
+
 .mobile-menu ul {
     padding: 20px;
     color: #02073E;
@@ -272,127 +181,131 @@ nav {
     right: 0;
 }
 
-.background-container {
-    background-image: url("./images/advertisebackground.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    height: 200vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.plus-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    position: relative;
-}
-
-.icon-container {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: "B612", sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
+.get_started_button {
+    display: block;
+    width: 160px;
+    margin: 40px auto;
+    background: #0A8080;
+    font-family: "DM Sans", sans-serif;
+    padding: 10px 39px;
     color: white;
-    transition: transform 0.3s ease-in-out;
+    border: none;
+    border-radius: 9px;
+    height: 50px;
 }
 
-.icon-container:hover {
-    transform: translateY(-10px);
+form{
+    width: 50%;
+    margin: 0 auto;
 }
 
-.icon {
-    width: 30%;
-    height: 30%;
-}
-
-.top {
-    bottom: 40vh;
-    left: 40%;
-}
-
-.bottom {
-    left: 40%;
-}
-
-.left {
-    left: 25%;
-    bottom: 10vh;
-}
-
-.right {
-    right: 25%;
-    bottom: 10vh;
-}
-
-
-.long-paragraph {
-    position: absolute;
-    top: 70%;
-    width: 70%;
-    margin-bottom: 300px;
-    left: 20%;
-    background-color: #FFF5ED;
-    font-size: 1.5vw  ;
-    line-height: 7vh;
-    color: #0F2137;
-    font-family: "B612", sans-serif;
-    font-style: italic;
+.contact-form {
+    background-color: #0A8080;
+    border-radius: 20%;
+    padding: 60px 100px;
+    width: 33%;
+    height: 5%;
+    margin: 0 auto;
+    box-sizing: border-box;
     text-align: center;
 }
-.gray-background {
-    background-color: #F9FAFC;
-    padding-bottom: 10px;
+
+.contact-form h2 {
+    color: #fff;
+    margin-bottom: 20px;
 }
 
-.background_description {
-    font-family: "DM Sans", sans-serif;
-    text-align: center;
-    color: #0F2137;
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea,
+.contact-form button {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
     font-size: 16px;
 }
 
-.services-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 1.5rem;
-    margin-left: 2%;
-    margin-top: 70px;
-
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    background-color: #FBFCFD;
 }
 
-.service {
-    display: flex;
-    align-items: center;
+.contact-form textarea {
+    background-color: #FBFCFD;
+    height: 100px;
 }
 
-.service-content {
-    padding-left: 20px;
-    margin-top: 90px;
+.contact-form button {
+    background-color: #FBFCFD;
+    color: black;
+    cursor: pointer;
+}
+
+.error{
+    display: none;
+    color: red;
     font-family: "DM Sans", sans-serif;
-    color: #343D48;
+    padding-bottom: 3px;
+}
+
+.Cbackground{
+    background-color: #FFCBA1;
+    padding: 50px 0;
+}
+
+.faq-background{
+    background-color: #F8F0EA;
+    padding-bottom: 1px;
+}
+.faq-section {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.faq-content {
+    display: none;
+    padding: 10px 20px;
+    border: 1px solid #e3e3e3;
+    border-top: none;
+    color: #555;
+    border-radius: 0 0 8px 8px;
+    background-color: #F8F0EA;
+}
+
+.faq-item {
+    border: 1px solid #e3e3e3;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
 
 }
 
-.service-content a {
-    text-decoration: none;
-    color: #3183FF;
-    font-weight: normal;
-    font-size: 16px;
-    font-family: "DM Sans", sans-serif;
+.faq-toggle {
+    cursor: pointer;
+    padding: 15px 20px;
+    background-color: #fff;
+    font-weight: bold;
+    text-align: left;
+    border: none;
+    transition: background-color 0.3s;
+    color: #333;
+    border-radius: 8px 8px 0 0;
+    display: block;
 }
 
-.service-content p {
-    line-height: 30px;
+.faq-toggle:hover {
+    background-color: #f2f2f2;
 }
+
+.faq-toggle.active .faq-content {
+    display: block;
+}
+
+
 .subscribe-background {
     background-color: #F8F0EA;
     background-image: url("./images/sub.png");

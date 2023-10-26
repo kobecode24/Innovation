@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home page</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Contact us</title>
     <link href="https://fonts.cdnfonts.com/css/b612" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./contact-us-style.css" />
 </head>
 
 <body>
@@ -23,8 +23,8 @@
             <li><a class="custom-link" href="./about_us.html"> About</a></li>
         </ul>
         <div class="right-nav">
-                <a href="#">login</a>
-                <a id="get_started" href="#">Get started</a>
+            <a href="#">login</a>
+            <a id="get_started" href="#">Get started</a>
             <div class="underline">
                 <img src="images/lines_png.png" alt="underline">
             </div>
@@ -45,78 +45,66 @@
     </nav>
 </header>
 <div>
-    <h1>Creativity starts with viewing the<br /> whole world differently</h1>
+    <h1>Stay Connected <br/> Contact Innovations</h1>
     <p class="h1_description">A service agency with customer satisfaction</p>
+    <button class="get_started_button"><a href="#get_started_scroll">F.A.Q</a></button>
 </div>
-<div class="background">
-    <button class="get_started_button"><a href="#get_started_scroll">Get Started</a></button>
-    <img class="image_position" src="images/landing_page.png" alt="figma image">
-    <h2 id="get_started_scroll">Grow your startup with our Service</h2>
-    <p class="background_description">Build an incredible workplace and grow your business with
-        Gusto’s<br/>all-in-one
-        platform with amazing contents.</p>
+<section class="Cbackground">
+    <form class="contact-form" action="#" method="post">
+        <h2>Contact Us</h2>
+        <input class="Cname" type="text" placeholder="First and Last Name">
+        <span class="error"> ! Type the first and the last name</span>
+        <input class="Cemail" type="text" placeholder="Email">
+        <span class="error"> ! Invalid email</span>
+        <textarea class="Ctext" placeholder="what you wanna say ?"></textarea>
+        <span class="error"> ! 50 word is required </span>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+<section class="faq-background" id="get_started_scroll">
+    <h2>F.A.Q</h2>
+    <div class="faq-section">
+        <div class="faq-item">
+            <label class="faq-toggle">How do you select startups for advertising?
+                <div class="faq-content">
+                    <p>We carefully review each startup's vision, products or services, and market potential. Only those that meet our criteria of innovation and scalability are chosen for advertising.</p>
+                </div>
+            </label>
+        </div>
 
-        <div class="services_dev">
-            <div class="services">
-                    <div>
-                        <img src="./images/red_icon.png" alt="service 1">
-                    </div>
-                    <div>
-                        <h3>Marketing & advertising</h3>
-                        <p>Get your info tests delivered at<br />home collect a sample from the<br />your pogress tests.</p>
-                    </div>
+        <div class="faq-item">
+            <label class="faq-toggle">What are the costs involved for advertising my startup?
+                <div class="faq-content">
+                    <p>The cost varies based on the advertising package chosen. We offer basic, premium, and platinum packages. Contact our sales team for a detailed pricing structure.</p>
                 </div>
-                <div class="services">
-                    <div>
-                        <img src="./images/blue_icon.png" alt="service 2">
-                    </div>
-                    <div>
-                        <h3>Ultimate development</h3>
-                        <p>Get your info tests delivered at<br />home collect a sample from the<br />your pogress tests.</p>
-                    </div>
+            </label>
+        </div>
+
+        <div class="faq-item">
+            <label class="faq-toggle">How long will my startup's advertisement be displayed on your platform?
+                <div class="faq-content">
+                    <p>Advertisements typically run for a month. However, extended campaigns can be customized according to the startup's needs and goals.</p>
                 </div>
-                <div class="services">
-                    <div>
-                        <img src="./images/green_icon.png" alt="service 3">
-                    </div>
-                    <div>
-                        <h3>Business Enterprise</h3>
-                        <p>Get your info tests delivered at<br />home collect a sample from the<br />your pogress tests.</p>
-                    </div>
+            </label>
+        </div>
+
+        <div class="faq-item">
+            <label class="faq-toggle">Can I track the performance of my advertisement?
+                <div class="faq-content">
+                    <p>Yes, we provide a detailed analytics dashboard that lets you track the number of views, clicks, and other relevant metrics for your advertisement.</p>
                 </div>
-            </div>
-    </div>
-<div class="questions">
-    <p>Why you choose our service?</p>
-    <p>What’s our business promise?</p>
-    <p>What’s our role model plan?</p>
-</div>
-<div class="back-line"></div>
-<div class="front-line"></div>
-<div class="middle">
-    <div>
-        <h2 class="h2-middle">We will turn your idea in<br />the successful business<br />model framework</h2>
-        <p class="middle_p">Get your tests delivered at let home collect sample from<br />the victory of the
-            managements
-            that supplies best design<br />system guidelines ever.</p>
-            <div class="green_mark_text">
-            <ul>
-                <li>Medical and vision</li>
-                <li>Life insurance</li>
-            </ul>
-            <div>
-                <ul>
-                    <li>HSAs and FSAs</li>
-                    <li>Commuter benefits</li>
-                </ul>
-            </div>
+            </label>
+        </div>
+
+        <div class="faq-item">
+            <label class="faq-toggle">Do you offer any discounts for early-stage startups?
+                <div class="faq-content">
+                    <p>We understand the challenges of early-stage startups. That's why we offer a special discount for startups that are less than a year old. Please reach out to our team for more details.</p>
+                </div>
+            </label>
         </div>
     </div>
-    <div>
-        <img class="illustration" src="./images/illustration.png" alt="middle image">
-    </div>
-</div>
-<a class="explore_more" href="./advertise.html">Explore more ></a>
+</section>
 <section class="subscribe-background">
     <div class="content-container">
         <div class="white-background">
@@ -196,6 +184,7 @@
     </div>
 </footer>
 <script src="./app.js"></script>
+<script src="./validation.js"></script>
 </body>
 
 </html>

@@ -6,7 +6,6 @@ document.getElementById("burger").addEventListener("click", function() {
         menu.classList.remove("mobile-menu-active");
         burgerIcon.classList.remove("fa-x");
         burgerIcon.classList.add("fa-bars");
-        
     } else {
         menu.classList.add("mobile-menu-active");
         burgerIcon.classList.remove("fa-bars");

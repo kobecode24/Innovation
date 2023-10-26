@@ -5,87 +5,188 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About us</title>
-    <link rel="stylesheet" href="./about-us-style.css" />
     <link href="https://fonts.cdnfonts.com/css/b612" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="about-us-style.css" />
 </head>
 
 <body>
 
 <header>
-    <a href="./index.html">
-        <img class="logo" src="./images/logo.png" alt="innovations_logo">
-    </a>
-    <a href="./index.html">
-        <img class="log_text" src="./images/logo_text_png.png" alt="innovations_logo_text">
-    </a>
+
     <nav>
+        <a href="./index.html" class="logo_text"> <img class="logo" src="./images/logo.png" alt="innovations_logo"/>Innovations</a>
         <ul class="menu">
-            <li style="margin-left: 350px"><a class="custom-link" href="./index.html"> Home</a></li>
+            <li><a class="custom-link" href="./index.html"> Home</a></li>
             <li><a class="custom-link" href="./advertise.html"> Advertise&#9660;</a></li>
             <li><a class="custom-link" href="./contact_us.html"> Support&#9660;</a></li>
             <li><a class="custom-link" href="./about_us.html"> About</a></li>
-            <li style="margin-left: 200px"><a class="custom-link" href="#"> Login</a></li>
-            <li ID="get_started"><a class="custom-link" href="#"> Get Started</a><img src="./images/lines_png.png"
-                                                                                      alt="two line under get started">
-            </li>
         </ul>
+        <div class="right-nav">
+            <a href="#">login</a>
+            <a id="get_started" href="#">Get started</a>
+            <div class="underline">
+                <img src="images/lines_png.png" alt="underline">
+            </div>
+        </div>
+        <div class="mobile-nav" id="burger">
+            <i class="fa-solid fa-bars" style="color: #02073E;" id="burgerIcon"></i>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a class="custom-link" href="./index.html"> Home</a></li>
+                <li><a class="custom-link" href="./advertise.html"> Advertise&#9660;</a></li>
+                <li><a class="custom-link" href="./contact_us.html"> Support&#9660;</a></li>
+                <li><a class="custom-link" href="./about_us.html"> About</a></li>
+                <li><a href="#">login</a></li>
+                <li><a href="#">Get started</a></li>
+            </ul>
+        </div>
     </nav>
 </header>
 <div class="top">
     <h1>About Us: Innovations in a Snapshot</h1>
-    <p class="h_description">Evolution in Every Frame.</p>
+    <p class="h1_description">Evolution in Every Frame.</p>
     <button class="get_started_button"><a style="text-decoration: none;color: inherit"
                                           href="#get_started_scroll">Get Started</a></button>
     <h2>Meet our superheros</h2>
     <p>Build an incredible workplace and grow your business with Gusto’s<br />all-in-one platform with amazing
         contents.</p>
 </div>
+
 <section class="middle-content">
-    <img class="middle-content-first_image" src="./images/superheros.png" alt="co-founders of innovations">
-    <div class="long-description">
-        <img class="dash" src="./images/dash.png" alt="background dash image">
-        <p>“Whatever we create in Qwilr looks absolutely brilliant. It helps show<br />our work in the best light,
-            and is downright impressive when clients see<br />a Qwilr Page we have made for them.”</p>
-        <p class="author">By Denny Albuz, Adviser of Paypal</p>
+    <div class="CoFounders">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/Emmalee%20Mclain.png" alt="first co founder"></div>
+                <div class="swiper-slide"><img src="./images/Daisy%20Morgan.png" alt="second co founder"></div>
+                <div class="swiper-slide"><img src="./images/Ariyanna%20Hicks.png" alt="third co founder"></div>
+                <div class="swiper-slide"><img src="images/Yamilet%20Hooker.png" alt="fourth co founder"></div>
+                <div class="swiper-slide"><img src="./images/Emmalee%20Mclain.png" alt="first co founder"></div>
+                <div class="swiper-slide"><img src="./images/Daisy%20Morgan.png" alt="second co founder"></div>
+                <div class="swiper-slide"><img src="./images/Ariyanna%20Hicks.png" alt="third co founder"></div>
+                <div class="swiper-slide"><img src="images/Yamilet%20Hooker.png" alt="fourth co founder"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 0,
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints:{
+                    300:{
+                        slidesPerView: 1,
+                    },
+                    600:{
+                        slidesPerView: 2,
+                    },
+                    900:{
+                        slidesPerView: 3,
+                    }
+                },
+            });
+        </script>
     </div>
-    <div class="back-line"></div>
-    <div class="front-line"></div>
-    <img class="middle-content-second_image" src="./images/logos.png">
+    <div class="description-background">
+        <div class="dash-div">
+            <img class="dash" src="./images/dash.png" alt="background dash image">
+            <div class="long-description">
+                <p>“Whatever we create in Qwilr looks absolutely brilliant. It helps show<br />our work in the best light,
+                    and is downright impressive when clients see<br />a Qwilr Page we have made for them.”</p>
+                <p>By Denny Albuz, Adviser of Paypal</p>
+            </div>
+        </div>
+        <div class="position">
+            <div class="back-line"></div>
+            <div class="front-line"></div>
+        </div>
+        <div class="logos">
+            <div class="logos-slide">
+                <img src="./images/uber.png" alt="first logo"/>
+                <img src="./images/google.png" alt="second logo"/>
+                <img src="./images/paypal.png" alt="third logo"/>
+                <img src="./images/microsoft.png" alt="fourth logo"/>
+                <img src="./images/dribbble.png" alt="fifth logo"/>
+            </div>
+            <div class="logos-slide">
+                <img src="./images/uber.png" alt="first logo"/>
+                <img src="./images/google.png" alt="second logo"/>
+                <img src="./images/paypal.png" alt="third logo"/>
+                <img src="./images/microsoft.png" alt="fourth logo"/>
+                <img src="./images/dribbble.png" alt="fifth logo"/>
+            </div>
+        </div>
+    </div>
+
+
 </section>
 <section class="bottom-background">
-    <h3>Popular blog post we update everyday</h3>
+    <h2>Popular blog post we update everyday</h2>
     <p class="bottom-paragraph">Focus only on the meaning, we take care of the design. As soon as the<br />
         meeting end you can export in one click.</p>
-    <img class="bottom-image" src="./images/blogs.png">
-    <div class="info-container">
-        <div class="info-section">
-            <img src="./images/first-bottom-icon.png" alt="Mission and Vision Icon">
+    <div class="blog-container">
+        <div class="column">
+            <img src="./images/blog1.png" alt="Image 1">
+            <h3>How to work with prototype design with adobe xd featuring tools</h3>
+            <p>The 2019 Innovation by Design Awards<br/>
+                honor the designers and businesses solving<br/>
+                the problems of today and tomorrow. It is<br/>
+                one of the most sought-after design</p>
+        </div>
+        <div class="column">
+            <h3 id="FBF5F1">Antibias receives honorable gift mention at Fast Company’s most Innovation by Design Awards</h3>
+            <img src="./images/blog2.png" alt="Image 2">
+            <h3>Multiple arbard prototype with Figma</h3>
+            <p>Beyond launched antibias, a Chrome extension that replaces LinkedIn profile photos</p>
+        </div>
+        <div class="column">
+            <div class="img-container pic-margin">
+                <img src="./images/blog3.png" alt="Image 3">
+                <h3 class="overlay-title">Multiple task wireframing with team management perform better</h3>
+            </div>
+            <div class="img-container ">
+                <img src="./images/blog4.png" alt="Image 4">
+                <h3 class="overlay-title">Team presentation with latest user interface & experience reach more</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="get_started_scroll">
+        <div class="card">
+            <img src="./images/first-bottom-icon.png" alt="Mission and Vision">
             <h3>Mission and Vision</h3>
-            <p>At Innovations, our mission is to empower startups by providing a global platform that amplifies
-                their innovative ideas. We're driven by a vision to create a world where every startup, regardless
-                of its size, can make a lasting impact.</p>
+            <p>At Innovations, our mission is to empower startups by providing a global platform that amplifies their innovative ideas. We're driven by a vision to create a world where every startup, regardless of its size, can make a lasting impact</p>
         </div>
-        <div class="info-section">
-            <img src="./images/second-bottom-icon.png" alt="Company History Icon">
+        <div class="card">
+            <img src="./images/second-bottom-icon.png" alt="Company History">
             <h3>Company History</h3>
-            <p>Founded in 2023 by Anthony Davis and co-founders, Innovations has grown from a startup itself into a
-                globally recognized platform. Our journey is marked by significant milestones, shaping us into a
-                prominent player in the startup ecosystem.</p>
+            <p>Founded in 2023 by Anthony Davis and co-founders, Innovations has grown from a startup itself into a globally recognized platform. Our journey is marked by significant milestones, shaping us into a prominent player in the startup ecosystem.</p>
         </div>
-        <div class="info-section">
-            <img src="./images/third-bottom-icon.png" alt="Community Impact Icon">
+        <div class="card">
+            <img src="./images/third-bottom-icon.png" alt="Community Impact">
             <h3>Community Impact</h3>
-            <p>Innovations has connected startups with resources, support, and a thriving community. We've
-                facilitated success stories and formed partnerships, contributing to the growth of the startup
-                landscape.</p>
+            <p>Innovations has connected startups with resources, support, and a thriving community. We've facilitated success stories and formed partnerships, contributing to the growth of the startup landscape.</p>
         </div>
-        <div class="info-section">
-            <img src="./images/fourth-bottom-icon.png" alt="Future Goals Icon">
+        <div class="card">
+            <img src="./images/fourth-bottom-icon.png" alt="Future Goals">
             <h3>Future Goals</h3>
-            <p>Our unwavering commitment lies in customer satisfaction and service excellence. We strive to take our
-                services to perfection, envisioning Innovations as an innovation hub that fosters creativity and
-                connects startups with endless possibilities.</p>
+            <p>Our unwavering commitment lies in customer satisfaction and service excellence. We strive to take our services to perfection, envisioning Innovations as an innovation hub that fosters creativity and connects startups with endless possibilities.</p>
         </div>
     </div>
 
@@ -94,19 +195,26 @@
     <div class="content-container">
         <div class="white-background">
             <div>
-                <h2 style="padding-top: unset ;text-align: unset;font-size: 1.5rem">Like our service? Subscribe us
+                <h2 class="subscribe-h2">Like our service? Subscribe us
                 </h2>
                 <p>We have more than a thousand of creative entrepreneurs<br />and start joining our business</p>
             </div>
             <div class="input-container">
-                <!--<label for="email">Email Address </label>-->
-                <input type="email" id="email" placeholder="Enter Email address" class="subscribe-input">
+                <div class="sub-bar">
+                    <div>
+                        <!--<label for="email">Email Address </label>-->
+                        <input class="subscribe-input" type="email" id="email" placeholder="Enter Email address">
+                    </div>
+                    <div>
+                        <button class="subscribe-btn">Subscribe</button>
+                    </div>
+                </div>
                 <div>
                     <input type="checkbox" id="promotionalMessage">
                     <label for="promotionalMessage">Don't provide any promotional message.</label>
                 </div>
             </div>
-            <button class="subscribe-btn">Subscribe</button>
+            <!--<button class="subscribe-btn">Subscribe</button>-->
         </div>
     </div>
 </section>
@@ -161,7 +269,7 @@
         </div>
     </div>
 </footer>
-
+<script src="app.js"></script>
 </body>
 
 </html>
